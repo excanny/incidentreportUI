@@ -63,11 +63,11 @@ export default function Report() {
             <h3 className="text-center">Report Incident</h3>
           <form onSubmit={onSubmit}>
           <div class="form-group">
-            <label for="comment">Description:</label>
+            <label for="comment">Description: <span className='text-danger'>(Required)</span></label>
             <textarea class="form-control" rows="3" required onChange={(e) => setDescription(e.target.value)} ></textarea>
           </div>
           <div class="form-group">
-            <label for="comment">Address of incident:</label>
+            <label for="comment">Address of incident: <span className='text-danger'>(Required)</span></label>
             <textarea class="form-control" required rows="1" onChange={(e) => setAddress(e.target.value)} ></textarea>
           </div>
 
@@ -75,7 +75,7 @@ export default function Report() {
 
             <div className="col">
             <div class="form-group">
-              <label for="sel1">LGA:</label>
+              <label for="sel1">LGA: <span className='text-danger'>(Required)</span></label>
               <select class="form-control" required onChange={(e) => setLGA(e.target.value)}>
               <option value="LGA" disabled selected hidden>
                 Select your LGA here...
@@ -106,7 +106,7 @@ export default function Report() {
 
             <div className="col">
             <div class="form-group">
-              <label for="sel1">LCDA:</label>
+              <label for="sel1">LCDA:- <span className='text-danger'>(Required)</span></label>
               <select class="form-control" required onChange={(e) => setLCDA(e.target.value)}>
               <option value="LCDA" disabled selected hidden>
                 Your LCDA here ...
@@ -219,7 +219,7 @@ export default function Report() {
 
             <div className="col">
             <div className="form-group">
-              <label htmlFor="pwd" className='pb-0'>Date/Time of Incident:</label>
+              <label htmlFor="pwd" className='pb-0'>Date/Time of Incident: <span className='text-danger'>(Required)</span></label>
               <input type="datetime-local" required className="form-control" onChange={(e) => setTime(e.target.value)}/>
             </div>
             

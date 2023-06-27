@@ -35,6 +35,7 @@ export default function Login() {
     <>
      <div className="container-fluid">
       
+     <div className="mt-3"><a href="/">Home</a></div>
 
       <div className="row mt-5">
         <div className="col pl-5">
