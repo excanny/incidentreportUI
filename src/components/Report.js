@@ -35,7 +35,9 @@ export default function Report() {
         .then((response) => {
           //console.log(response.status);
 
-        if(response.status == 200) window.location.href = "/report-sucessful";
+          alert("Report sent successfully");
+
+        if(response.status == 200) window.location.href = "/";
 
         }, (error) => {
           //console.log(error);

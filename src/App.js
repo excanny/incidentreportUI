@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import Report from './components/Report';
-import UserDashboard from './components/UserDashboard';
+import AdminDashboard from './components/AdminDashboard';
 import ReportSuccessful from './components/ReportSuccessful';
 import RegisterSuccessful from './components/RegisterSuccessful';
 
@@ -33,7 +33,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/report" element={<Report />} />
-      <Route path="/user-dashboard" element={<UserDashboard />} />
+      <Route path="/admin-dashboard" element={<AdminDashboard />} />
       <Route path="/report-successful" element={<ReportSuccessful />} />
       <Route path="/register-successful" element={<RegisterSuccessful />} />
     </Routes>

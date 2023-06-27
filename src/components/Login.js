@@ -23,7 +23,7 @@ export default function Login() {
         .then((response) => {
           console.log();
 
-        if(response.data.status == "Ok") window.location.href = "/user-dashboard";
+        if(response.data.status == "Ok") window.location.href = "/admin-dashboard";
 
         }, (error) => {
           //console.log(error);

@@ -32,8 +32,8 @@ export default function Signup() {
     axios.post('https://localhost:7002/api/User/AddUser', data)
     .then((response) => {
       //console.log(response);
-
-      if(response.status == 200) window.location.href = "/register-sucessful";
+      alert("Registration successful");
+      if(response.status == 200) window.location.href = "/";
 
     }, (error) => {
       //console.log(error);
